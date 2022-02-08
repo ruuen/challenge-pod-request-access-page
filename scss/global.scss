@@ -28,6 +28,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font-family: var.$font-family-primary;
 }
 
 // Visually hide element but leave it accessible for screen readers
