@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <header class="page-header">
-      <img src="./images/logo.svg" alt="Pod company logo" class="page-header__logo" />
+    <header class="header">
+      <img src="./images/logo.svg" alt="Pod company logo" class="header__logo" />
     </header>
     <main class="content">
       <div class="content__container">
-        <h1 class="content__heading">Publish your podcasts everywhere.</h1>
+        <h1 class="content__heading">Publish your podcasts <span class="content__heading--white">everywhere.</span></h1>
         <p class="content__copy">
           Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts,
           Google Podcasts, Pocket Casts and more!
@@ -38,12 +38,21 @@
           <img src="./images/pocket-casts.svg" alt="Pocket Casts logo" class="content__platform-logo" />
         </li>
       </ul>
-      <form novalidate class="content__form">
+      <form novalidate autocomplete="off" class="content__form">
         <label for="emailAddress" class="visually-hidden">Email Address</label>
-        <input type="email" name="emailAddress" id="emailAddress" class="content__form-input" />
+        <input
+          type="email"
+          name="emailAddress"
+          id="emailAddress"
+          placeholder="Email address"
+          class="content__form-input"
+        />
         <button type="submit" class="content__form-btn">Request access</button>
       </form>
     </main>
+    <picture>
+      <img src="./images/image-host-mobile.jpg" alt="" class="background" />
+    </picture>
     <script src="./main.js"></script>
   </body>
 </html>

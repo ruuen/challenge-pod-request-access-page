@@ -1,1 +1,118 @@
 @use "variables" as var;
+
+body {
+  position: relative;
+  background: var.$clr-black;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.05;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header {
+  padding: 4rem 4rem 3.5rem 4rem;
+  width: 100%;
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 0 1.5rem;
+}
+
+.content__container {
+  padding: 0 0 2rem 0;
+}
+
+.content__heading {
+  font-weight: var.$font-weight-light;
+  color: var.$clr-green;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 1.5;
+
+  &--white {
+    color: var.$clr-white;
+  }
+}
+
+.content__copy {
+  color: var.$clr-white;
+  font-weight: var.$font-weight-light;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 0.95em;
+  padding: 1rem 0 0 0;
+}
+
+.content__platform-list {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 3rem 0;
+}
+
+.content__platform-item {
+  width: 20%;
+}
+
+.content__platform-logo {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.content__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__form-input {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 28px;
+  font-family: var.$font-family-primary;
+  font-weight: var.$font-weight-bold;
+  font-size: 0.9em;
+  color: var.$clr-white;
+  background: var.$clr-blue-900;
+
+  &::placeholder {
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    opacity: 0.5;
+  }
+}
+
+.content__form-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 28px;
+  background: var.$clr-green;
+  color: var.$clr-black;
+  font-weight: var.$font-weight-bold;
+  font-size: 0.9em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
