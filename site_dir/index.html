@@ -13,13 +13,37 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <!-- Content to markup
-    Publish your podcasts everywhere.
-
-    Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, 
-    Apple Podcasts, Google Podcasts, Pocket Casts and more!
-
-    Request access -->
+    <header class="page-header">
+      <img src="./images/logo.svg" alt="Pod company logo" class="page-header__logo" />
+    </header>
+    <main class="content">
+      <div class="content__container">
+        <h1 class="content__heading">Publish your podcasts everywhere.</h1>
+        <p class="content__copy">
+          Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts,
+          Google Podcasts, Pocket Casts and more!
+        </p>
+      </div>
+      <ul class="content__platform-list">
+        <li class="content__platform-item">
+          <img src="./images/spotify.svg" alt="Spotify logo" class="content__platform-logo" />
+        </li>
+        <li class="content__platform-item">
+          <img src="./images/apple-podcast.svg" alt="Apple Podcast logo" class="content__platform-logo" />
+        </li>
+        <li class="content__platform-item">
+          <img src="./images/google-podcasts.svg" alt="Google Podcasts logo" class="content__platform-logo" />
+        </li>
+        <li class="content__platform-item">
+          <img src="./images/pocket-casts.svg" alt="Pocket Casts logo" class="content__platform-logo" />
+        </li>
+      </ul>
+      <form novalidate class="content__form">
+        <label for="emailAddress" class="visually-hidden">Email Address</label>
+        <input type="email" name="emailAddress" id="emailAddress" class="content__form-input" />
+        <button type="submit" class="content__form-btn">Request access</button>
+      </form>
+    </main>
     <script src="./main.js"></script>
   </body>
 </html>
