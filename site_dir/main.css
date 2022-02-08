@@ -34,7 +34,7 @@
 
 html,
 body {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 body {
@@ -97,6 +97,7 @@ body {
 
 .content__container {
   padding: 0 0 2rem 0;
+  text-align: center;
 }
 
 .content__heading {
@@ -104,7 +105,6 @@ body {
   color: #54e6af;
   text-transform: uppercase;
   font-size: 1.6em;
-  text-align: center;
   line-height: 1.5;
 }
 .content__heading--white {
@@ -114,7 +114,6 @@ body {
 .content__copy {
   color: #ffffff;
   font-weight: 300;
-  text-align: center;
   line-height: 1.5;
   font-size: 0.95em;
   padding: 1rem 0 0 0;
@@ -138,6 +137,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+  opacity: 0.75;
 }
 
 .content__form {
@@ -177,4 +177,76 @@ body {
   font-size: 0.9em;
   text-transform: capitalize;
   cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    background: no-repeat bottom left 2rem url(./images/bg-pattern-dots.svg), #121725;
+  }
+
+  .background {
+    width: auto;
+    height: auto;
+    left: auto;
+    right: 0;
+    opacity: 1;
+  }
+
+  .header {
+    padding: 3rem 3rem 2rem 2.5rem;
+  }
+
+  .header__logo {
+    margin: 0 auto 0 0;
+  }
+
+  .content {
+    background: #121725;
+    margin: 7.5rem 6rem 0 0;
+    padding: 5rem 1.5rem 0 2.5rem;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.1fr 0.25fr;
+    grid-template-areas: "copy" "form" "spacer" "logo";
+  }
+
+  .content__container {
+    text-align: left;
+  }
+
+  .content__heading {
+    font-size: 3em;
+    line-height: 1.2;
+  }
+
+  .content__copy {
+    font-size: 1.1em;
+    padding: 1.75rem 0 0 0;
+    max-width: 27.5rem;
+  }
+
+  .content__platform-list {
+    padding: 0 5rem 0 0;
+    grid-area: logo;
+    max-width: 40rem;
+  }
+
+  .content__form {
+    grid-area: form;
+    max-width: 27.5rem;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .content__form-input {
+    margin: 0;
+    padding: 1.25rem 2rem;
+    z-index: 0;
+  }
+
+  .content__form-btn {
+    width: auto;
+    padding: 1rem 1.5rem;
+    margin: 0 0 0 -10.25rem;
+    z-index: 1;
+  }
 }
