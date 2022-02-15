@@ -87,6 +87,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .content__form-input {
@@ -124,4 +125,14 @@ body {
   &:hover {
     background: lighten($color: var.$clr-green, $amount: 15);
   }
+}
+
+.content__form-error {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0;
+  color: var.$clr-red;
+  font-size: 0.75em;
+  font-weight: var.$font-weight-bold;
+  padding: 0 0 0 2.15rem;
 }

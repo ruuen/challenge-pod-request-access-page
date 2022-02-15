@@ -150,6 +150,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .content__form-input {
@@ -185,6 +186,16 @@ body {
 }
 .content__form-btn:hover {
   background: #97f0ce;
+}
+
+.content__form-error {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0;
+  color: #fb3e3e;
+  font-size: 0.75em;
+  font-weight: 700;
+  padding: 0 0 0 2.15rem;
 }
 
 @media screen and (min-width: 750px) {
