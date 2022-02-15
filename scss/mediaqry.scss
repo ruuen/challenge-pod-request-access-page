@@ -2,19 +2,21 @@
 
 // Tablet Styles
 @media screen and (min-width: var.$breakpoint-tablet) {
-  // This needs to be refactored; desktop design requires the background dots element
-  // to overlap on top of the image, therefore using background-image won't work
-  // New solution needs absolute positioning similar to the .background element
-  body {
-    background: no-repeat bottom left 2rem url(./images/bg-pattern-dots.svg), var.$clr-black;
-  }
-
   .background {
     width: auto;
     height: auto;
     left: auto;
     right: 0;
     opacity: 1;
+  }
+
+  .background-dots {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    z-index: 0;
+    min-width: 25vw;
   }
 
   .header {
@@ -81,6 +83,13 @@
   .background {
     top: 15%;
     width: 60%;
+  }
+
+  .background-dots {
+    left: auto;
+    right: 0;
+    bottom: 7.5rem;
+    min-width: 15vw;
   }
 
   .header {

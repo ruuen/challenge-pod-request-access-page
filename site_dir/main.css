@@ -81,6 +81,10 @@ body {
   object-position: center;
 }
 
+.background-dots {
+  display: none;
+}
+
 .header {
   padding: 4rem 4rem 3.5rem 4rem;
   width: 100%;
@@ -180,16 +184,21 @@ body {
 }
 
 @media screen and (min-width: 750px) {
-  body {
-    background: no-repeat bottom left 2rem url(./images/bg-pattern-dots.svg), #121725;
-  }
-
   .background {
     width: auto;
     height: auto;
     left: auto;
     right: 0;
     opacity: 1;
+  }
+
+  .background-dots {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    z-index: 0;
+    min-width: 25vw;
   }
 
   .header {
@@ -254,6 +263,13 @@ body {
   .background {
     top: 15%;
     width: 60%;
+  }
+
+  .background-dots {
+    left: auto;
+    right: 0;
+    bottom: 7.5rem;
+    min-width: 15vw;
   }
 
   .header {
