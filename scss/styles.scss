@@ -120,4 +120,8 @@ body {
   font-size: 0.9em;
   text-transform: capitalize;
   cursor: pointer;
+
+  &:hover {
+    background: lighten($color: var.$clr-green, $amount: 15);
+  }
 }
