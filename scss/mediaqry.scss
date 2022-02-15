@@ -2,6 +2,9 @@
 
 // Tablet Styles
 @media screen and (min-width: var.$breakpoint-tablet) {
+  // This needs to be refactored; desktop design requires the background dots element
+  // to overlap on top of the image, therefore using background-image won't work
+  // New solution needs absolute positioning similar to the .background element
   body {
     background: no-repeat bottom left 2rem url(./images/bg-pattern-dots.svg), var.$clr-black;
   }
@@ -70,5 +73,51 @@
     padding: 1rem 1.5rem;
     margin: 0 0 0 -10.25rem;
     z-index: 1;
+  }
+}
+
+// Desktop Styles
+@media screen and (min-width: var.$breakpoint-desktop) {
+  .background {
+    top: 15%;
+    width: 60%;
+  }
+
+  .header {
+    padding: 7.5rem 3rem 0 12.5rem;
+  }
+
+  .header__logo {
+    min-width: 10vw;
+  }
+
+  .content {
+    max-width: 60rem;
+    margin: 7.5rem 6rem 0 10rem;
+  }
+
+  .content__heading {
+    font-size: 4em;
+  }
+
+  .content__copy {
+    font-size: 1.45em;
+    max-width: 35rem;
+  }
+
+  .content__form {
+    max-width: 34.5rem;
+  }
+
+  .content__form-input {
+    font-size: 1.1em;
+    padding: 1.5rem 2.5rem;
+    border-radius: 34px;
+  }
+
+  .content__form-btn {
+    font-size: 1em;
+    margin: 0 0 0 -12.15rem;
+    padding: 1.15rem 2rem;
   }
 }
