@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/pod-landing-page-using-scss-and-bem-pyCbfxCAm)
-- Live Site URL: [Netlify](https://rd-challenge-pod-landing-page.netlify.app/)
+- Live Site URL: [Cloudflare Pages](https://mbr-challenge-pod-landing-page.pages.dev/)
 
 ## My process
 
@@ -59,5 +59,5 @@ This was challenging to complete but extremely rewarding! This was my third chal
 
 ## Author
 
-- Frontend Mentor - [@ruuendigital](https://www.frontendmentor.io/profile/ruuendigital)
+- Frontend Mentor - [@ruuen](https://www.frontendmentor.io/profile/ruuen)
 - Twitter - [@maxruuen](https://www.twitter.com/maxruuen)
